@@ -1,0 +1,790 @@
+1679630481.468992880 [kernel.C] Bootstrapping Ethos...
+1679630481.468997422 [kernel.C] Ethos kernel version: 0.9.11 (Master event loop)
+1679630481.468999606 [kernel.C] Ethos build info:     Jun 14 202212:18:019.3.1 20200408 (Red Hat 9.3.1-2)
+1679630481.469001189 [kernel.C] start_info:     ffffffff804ae000
+1679630481.469002183 [kernel.C]   nr_pages:     102400
+1679630481.469002872 [kernel.C]   shared_inf:   8163f000
+1679630481.469003604 [kernel.C]   pt_base:      ffffffff804b1000
+1679630481.469004133 [kernel.C]   mod_start:    0xffffffff8032d000
+1679630481.469004508 [kernel.C]   mod_len:      757760
+1679630481.469004922 [kernel.C]   flags:        0x0
+1679630481.469005343 [kernel.C]   cmd_line:     sd.port=11112
+1679630481.469006277 [kernel.C]   stack:      ffffffff801c9950-ffffffff801cb950
+1679630481.469008066 [kernel.C] sd.port=11112
+1679630481.469008703 [kernel.C] sd.mac=fe:ff:ff:ff:ff:ff
+1679630481.469009344 [kernel.C] sd.ip=10.0.2.15
+1679630481.469010109 [kernel.C] mlt.queueSize=10
+1679630481.469010555 [kernel.C] ipShadowDaemon=169.254.2.1
+1679630481.469010916 [kernel.C] ipNetwork=169.254.2.2
+1679630481.469013863 [kernel.C]   _text:        ffffffff80000000
+1679630481.469015520 [kernel.C]   _etext:       ffffffff8007c000
+1679630481.469017172 [kernel.C]   _edata:       ffffffff8009a012
+1679630481.469018708 [kernel.C]   stack start:  ffffffff801c9950
+1679630481.469020362 [kernel.C]   _end:         ffffffff80310528
+1679630481.469022672 [kernel.C]   First free, but mapped, pfn:   4b8
+1679630481.469024460 [kernel.C]   Fitst unmapped pfn:            800
+1679630481.469026586 [kernel.C]   Total RAM pages:               19000
+1679630481.469028690 [kernel.C]   Total RAM pages used for PTs:  7
+1679630481.469030851 [kernel.C]   KERN_START                     ffffffff80000000
+1679630481.469033093 [kernel.C]   KERN_END                       ffffffffffffffff
+1679630481.469035458 [kernel.C]   Max number of mapped pfns:     0x7ffff
+1679630481.469036659 [kernel.C]   Mappable pages: 0x4b8-0x19000    unmapped pages: 0x19000-0x19000
+1679630481.469037674 [kernel.C] Mapping memory range 0xffffffff80800000 - 0xffffffff99000000
+1679630481.469042007 [kernel.C] walked initially mapped pages
+1679630481.586961170 [kernel.C] mapped rest of pages
+1679630481.586961936 [kernel.C] MM: archPageTablePopulate completed
+1679630481.586962292 [kernel.C] MM: walk all mapped vm
+1679630481.587003929 [kernel.C] MM: walked
+1679630481.587005650 [kernel.C] MM: Initializing xtype from ffffffff8057c000 to ffffffff99000000
+1679630481.587049386 [kernel.C]   handles ... MM: Umapped pages from 0x19000000-0x19000000
+1679630481.587946282 [kernel.C] physicalInfoInit:  maxMappedPfn = 19000     maxPfn = 19000
+1679630481.589126449 [kernel.C] Buffered console enabled.
+1679630481.589318216 [kernel.C] XEN_GRANT_ frames:
+1679630481.589319214 [kernel.C] 	MFN = 0x815e2
+1679630481.589319432 [kernel.C] 	MFN = 0x78290
+1679630481.589319568 [kernel.C] 	MFN = 0x7828f
+1679630481.589319703 [kernel.C] 	MFN = 0x7828e
+1679630481.589319837 [kernel.C] 	MFN = 0x7828d
+1679630481.589319970 [kernel.C] 	MFN = 0x7828c
+1679630481.589320104 [kernel.C] 	MFN = 0x7828b
+1679630481.589320239 [kernel.C] 	MFN = 0x7828a
+1679630481.589335369 [kernel.C]         Mapping foreign machine frame = 0x815e2
+1679630481.589339522 [kernel.C]         Mapping foreign machine frame = 0x78290
+1679630481.589342930 [kernel.C]         Mapping foreign machine frame = 0x7828f
+1679630481.589346596 [kernel.C]         Mapping foreign machine frame = 0x7828e
+1679630481.589350940 [kernel.C]         Mapping foreign machine frame = 0x7828d
+1679630481.589354240 [kernel.C]         Mapping foreign machine frame = 0x7828c
+1679630481.589357590 [kernel.C]         Mapping foreign machine frame = 0x7828b
+1679630481.589377311 [kernel.C]         Mapping foreign machine frame = 0x7828a
+1679630481.589377731 [kernel.C] xenGrantTable mapped at ffffffff81010000.
+1679630481.589378357 [kernel.C] NR_GRANT_ENTRIES: 4096
+1679630481.589379120 [kernel.C] Initializing events ...
+1679630481.589540200 [kernel.C]  event allocator ...  readyEvents list ...  terminatedKernelEvents list ...  timer list ... done.
+1679630481.589577888 [kernel.C] XenStore channel on 0x804af000, evtchn  0x1
+1679630481.589578323 [kernel.C] ========== Initialize Xen Block Device ===============
+1679630481.591857755 [kernel.C] Block Disk Device: device/vbd/2048
+1679630481.600825506 [kernel.C] Backend ID: 0
+1679630481.601949169 [kernel.C] ====== backend: /local/domain/0/backend/vbd/5/2048
+1679630481.601951203 [kernel.C] Event Channel: 4
+1679630481.601953511 [kernel.C] ---------------Ring initiated.
+1679630481.601954551 [kernel.C] ---------------Ring page shared on grant table.
+1679630481.606016835 [kernel.C] Got InitWait from backend
+1679630481.606016835 [kernel.C] 
+1679630481.606017022 [kernel.C] ===== Start transaction
+1679630481.608349075 [kernel.C] ===== Ring ref
+1679630481.610386574 [kernel.C] ===== write event channel
+1679630481.612102180 [kernel.C] ===== write protocol
+1679630481.613948743 [kernel.C] ===== write state
+1679630481.626628201 [kernel.C] ReadWrite
+1679630481.626628541 [kernel.C] ===== About to watch value
+1679630481.637739745 [kernel.C] Sector-size: 512
+1679630481.638843708 [kernel.C] Sectors: 8192
+1679630481.643010850 [kernel.C] Info: 0
+1679630481.643011037 [kernel.C] ===== FS Init finished
+1679630481.643012692 [kernel.C] Initializing network interfaces ...
+1679630481.654830207 [kernel.C]         backend: /local/domain/0/backend/vif/5/0
+1679630482.374967210 [kernel.C]         backend: /local/domain/0/backend/vif/5/1
+1679630482.761881297 [kernel.C]         NET_TX_RING_SIZE: 256
+1679630482.761882319 [kernel.C]         NET_RX_RING_SIZE: 256
+1679630482.761882577 [kernel.C] done.
+1679630482.761883389 [kernel.C] 
+1679630482.761883389 [kernel.C] ---------------------------
+1679630482.761883937 [kernel.C] eth0:
+1679630482.761884472 [kernel.C] ---------------------------
+1679630482.761884877 [kernel.C] MAC: aa:00:00:00:00:01
+1679630482.761885726 [kernel.C] Backend: /local/domain/0/backend/vif/5/0
+1679630482.761886343 [kernel.C] Event-Channel: 5
+1679630482.761886343 [kernel.C] 
+1679630482.761887122 [kernel.C] 
+1679630482.761887122 [kernel.C] ---------------------------
+1679630482.761887513 [kernel.C] eth1:
+1679630482.761888067 [kernel.C] ---------------------------
+1679630482.761888326 [kernel.C] MAC: aa:00:00:00:00:02
+1679630482.761888908 [kernel.C] Backend: /local/domain/0/backend/vif/5/1
+1679630482.761889375 [kernel.C] Event-Channel: 6
+1679630482.761889375 [kernel.C] 
+1679630482.762390373 [kernel.C] xenNetGetSrcMac: interface=0 ...shadow daemon remote/local ip address 169.254.2.1/10.0.2.15
+1679630482.762391575 [kernel.C] shadow daemon remote/local udp port: 11112
+1679630482.762465298 [kernel.C] tunnelCreateOutgoing: successfully created tunnel
+1679630482.762467459 [kernel.C]    cryptoKeyType = CryptoKeyNone  tunnelId = 0x0
+1679630482.762470616 [kernel.C]    local    mac = aa:00:00:00:00:01    ip = 169.254.2.1    udp = 11112   isOdd = 0
+1679630482.762473871 [kernel.C]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11112    nonce = 1
+1679630482.762474724 [kernel.C]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1679630482.762475472 [kernel.C]    local.publicKey    = 0000000000000000000000000000000000000000000000000000000000000000
+1679630482.762476211 [kernel.C]    remote.publicKey   = 0000000000000000000000000000000000000000000000000000000000000000
+1679630482.762477116 [kernel.C]    symmetricKey       = 0000000000000000000000000000000000000000000000000000000000000000 
+1679630482.762480803 [kernel.C] shadowdaemonConnectionId = 2
+1679630482.768108005 [kernel.C] received shadowdaemon ping reply, status StatusOk
+1679630482.850920632 [kernel.C] Initializing file system ... fileSystemInit: openDirectoryVector bore
+1679630482.850921894 [kernel.C] fileSystemInit: openDirectoryVector crisp
+1679630482.850922888 [kernel.C] fileSystemInit: openDirectoryVector crispProxyInternal
+1679630482.850923868 [kernel.C] fileSystemInit: openDirectoryVector crypto
+1679630482.850924896 [kernel.C] fileSystemInit: openDirectoryVector debug
+1679630482.850925892 [kernel.C] fileSystemInit: openDirectoryVector directoryService
+1679630482.850926839 [kernel.C] fileSystemInit: openDirectoryVector disStore
+1679630482.850927783 [kernel.C] fileSystemInit: openDirectoryVector hyper
+1679630482.850929066 [kernel.C] fileSystemInit: openDirectoryVector kernel
+1679630482.850930042 [kernel.C] fileSystemInit: openDirectoryVector minimaltdService
+1679630482.850931036 [kernel.C] fileSystemInit: openDirectoryVector msg
+1679630482.850931994 [kernel.C] fileSystemInit: openDirectoryVector myRpc
+1679630482.850932952 [kernel.C] fileSystemInit: openDirectoryVector ping
+1679630482.850933930 [kernel.C] fileSystemInit: openDirectoryVector pipe
+1679630482.850934908 [kernel.C] fileSystemInit: openDirectoryVector processStatus
+1679630482.850935854 [kernel.C] fileSystemInit: openDirectoryVector resh
+1679630482.850936800 [kernel.C] fileSystemInit: openDirectoryVector umreceiveClient
+1679630482.850937752 [kernel.C] fileSystemInit: openDirectoryVector umsendClient
+1679630482.850938701 [kernel.C] fileSystemInit: openDirectoryVector umshimClient
+1679630483.053395489 [kernel.C] netFileInit ... netFileInit done ... done.
+1679630483.053867472 [kernel.C] randomInit done
+1679630483.090514297 [kernel.C] minimaltInit: _typeInit ... certificateInit ...ephemeralKeyPairRead ... ipcInit ...authUserInit ... _insert: authUser  localName=ahmed   hostName=client.ethos   success
+1679630483.099226884 [kernel.C] _insert: authUser  localName=bdrolet   hostName=client.ethos   success
+1679630483.104478533 [kernel.C] _insert: authUser  localName=bennett   hostName=client.ethos   success
+1679630483.105357569 [kernel.C] _insert: authUser  localName=gabriele   hostName=client.ethos   success
+1679630483.106292819 [kernel.C] _insert: authUser  localName=janosch   hostName=client.ethos   success
+1679630483.107202093 [kernel.C] _insert: authUser  localName=jlong   hostName=client.ethos   success
+1679630483.108141554 [kernel.C] _insert: authUser  localName=me   hostName=client.ethos   success
+1679630483.109048177 [kernel.C] _insert: authUser  localName=mike   hostName=client.ethos   success
+1679630483.110063101 [kernel.C] _insert: authUser  localName=nobody   hostName=client.ethos   success
+1679630483.111023319 [kernel.C] _insert: authUser  localName=pat   hostName=client.ethos   success
+1679630483.111940689 [kernel.C] _insert: authUser  localName=pollyPlaninsek   hostName=client.ethos   success
+1679630483.112857076 [kernel.C] _insert: authUser  localName=solworth   hostName=client.ethos   success
+1679630483.115639870 [kernel.C] _insert: authUser  localName=thanmayi   hostName=client.ethos   success
+1679630483.117280201 [kernel.C] _insert: authUser  localName=theodorePlaninsek   hostName=client.ethos   success
+1679630483.119676752 [kernel.C] _insert: authUser  localName=wfei   hostName=client.ethos   success
+1679630483.120756039 [kernel.C] _insert: authUser  localName=xuzhang   hostName=client.ethos   success
+1679630483.121972172 [kernel.C] _insert: authUser  localName=yl   hostName=client.ethos   success
+1679630483.122501876 [kernel.C] directoryCacheInit ... userCryptoInit ... done
+1679630483.122569529 [kernel.C] netWorkInit:   initNetworkMinimalt...xenNetGetSrcMac: interface=1 ...done
+1679630483.124763169 [kernel.C] efsInit done
+1679630483.124764535 [kernel.C] before initializing first process
+1679630483.128426733 [kernel.C] archProcessInitStart: right before process init
+1679630483.506766315 [kernel.C] exit()
+1679630504.373165014 [kernel.C] opening envelope right before tunnel create
+1679630504.373562361 [kernel.C] tunnelCreateIncoming: successfully created tunnel
+1679630504.373566162 [kernel.C]    cryptoKeyType = CryptoKeyPermanent  tunnelId = 0x1e085b71203d8ff3
+1679630504.373569748 [kernel.C]    local    mac = aa:00:00:00:00:02    ip = 169.254.2.2    udp = 11110   isOdd = 1
+1679630504.373573164 [kernel.C]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11120    nonce = 0
+1679630504.373574003 [kernel.C]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1679630504.373574858 [kernel.C]    local.publicKey    = e7926bf37b64b7ae2201c3a474c86d9058a637e742058bae79f0c4248c855201
+1679630504.373575675 [kernel.C]    remote.publicKey   = 264d55ce1878e4ccd16f7016d8eae732968919f233829b9f4cba5ec49edcb520
+1679630504.373576672 [kernel.C]    symmetricKey       = 25aa2e48282e3b6f2c7e3704534633d48d9f9c03cf71b9e10f8a3b3c6952f519 
+1679630504.374380811 [kernel.C] rpcMinimaltDirectoryServiceLookup:
+1679630504.382235517 [kernel.C] rpcDirectoryCacheInitializedInterlockReply: beginning  eventId=8046311351138504243  status=StatusOk
+1679630504.382238077 [kernel.C] rpcDirectoryCacheInitializedInterlockReply: event woken up
+1679630504.382483020 [kernel.C] netFileReadEphemeralHostCertificate: host=client.ethos   StatusOk
+1679630504.389050383 [kernel.C] opening envelope right before tunnel create
+1679630504.389225793 [kernel.C] tunnelCreateIncoming: successfully created tunnel
+1679630504.389229725 [kernel.C]    cryptoKeyType = CryptoKeyEphemeral  tunnelId = 0x2ae9805cc66a48e5
+1679630504.389233389 [kernel.C]    local    mac = aa:00:00:00:00:02    ip = 169.254.2.2    udp = 11111   isOdd = 1
+1679630504.389236875 [kernel.C]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 10.0.2.15    udp = 11121    nonce = 0
+1679630504.389237707 [kernel.C]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1679630504.389238568 [kernel.C]    local.publicKey    = 1a856769f1dcd2698b269696a1dddd91f9798096bd616df146b38b69bfdcf402
+1679630504.389239442 [kernel.C]    remote.publicKey   = 1481f6826624ddced84f4c53f736562629569894ed70982beecef18f74582f74
+1679630504.389240412 [kernel.C]    symmetricKey       = 582034b80701ec36320e4ebe28d01e1d8d14c8f8dd676364c5037b2da2bbc24c 
+1679630504.390352994 [kernel.C] rpcMinimaltConnectionCreateAuthenticated: enter  connectionId=4  path=/services/directoryService/directoryService
+1679630504.390359899 [kernel.C] _connectionCreate: advertiseFromPath succeeded
+1679630504.390360980 [kernel.C] _connectionCreate: connection created
+1679630504.390365737 [kernel.C] netFileReadPermission: servicePath=/services/directoryService
+1679630504.390588734 [kernel.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630504.390589801 [kernel.C] netFileReadPermission: label=directoryService
+1679630504.392914158 [kernel.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630504.392916772 [kernel.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630504.392919213 [kernel.C] netFileReadPermission: permission-- incomingUser->group=universal
+1679630504.393642465 [kernel.C] netFileReadUserCertificateByGroup: group=universal  userName=nobody@u.client.minimaltd.ethos  StatusNotADirectory
+1679630504.621737480 [kernel.C] rpcDirectoryCacheGetUserReply: beginning  eventId=10613365478639518060  status=StatusOk
+1679630504.621921829 [kernel.C] netFileReadUserCertificateByGroup: group=universal  userName=nobody@u.client.minimaltd.ethos  StatusOk
+1679630504.621923215 [kernel.C] directoryCacheUserLookup: returns nobody@u.client.minimaltd.ethos value
+1679630504.623516439 [kernel.C] _validateUser: validation  remoteName=nobody@u.client.minimaltd.ethos  localName=nobody,hostName=client.ethos  status = StatusOk
+1679630504.623519176 [kernel.C] _eventConnectionCreateAuthenticated: _validateUser nobody@u.client.ethos  StatusOk
+1679630504.623521281 [kernel.C] _eventConnectionCreateAuthenticated: next check /services/directoryService/directoryService
+1679630504.623521924 [kernel.C] _incomingConnection: at top
+1679630504.623524417 [kernel.C] _incomingConnection: status = StatusOk
+1679630504.623785391 [kernel.C] _eventConnectionCreateAuthenticated: rpcReply sent StatusOk
+1679630504.633774556 [kernel.C] rpcMinimaltIpcWrite:
+1679630504.633932933 [kernel.C] rpcMinimaltConnectionCreateAuthenticated: enter  connectionId=6  path=/services/resh/resh
+1679630504.633939027 [kernel.C] _connectionCreate: advertiseFromPath succeeded
+1679630504.633940258 [kernel.C] _connectionCreate: connection created
+1679630504.633944595 [kernel.C] netFileReadPermission: servicePath=/services/resh
+1679630504.634121053 [kernel.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630504.634122147 [kernel.C] netFileReadPermission: label=openServer
+1679630504.636713355 [kernel.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630504.636715856 [kernel.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630504.636718242 [kernel.C] netFileReadPermission: permission-- incomingUser->group=allUsers
+1679630504.637419685 [kernel.C] netFileReadUserCertificateByGroup: group=allUsers  userName=me@u.client.minimaltd.ethos  StatusNotADirectory
+1679630504.745372301 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630505.021701159 [kernel.C] rpcDirectoryCacheGetUserReply: beginning  eventId=17230889070960149379  status=StatusOk
+1679630505.022343806 [kernel.C] netFileReadUserCertificateByGroup: group=allUsers  userName=me@u.client.minimaltd.ethos  StatusOk
+1679630505.022345150 [kernel.C] directoryCacheUserLookup: returns me@u.client.minimaltd.ethos value
+1679630505.022691548 [kernel.C] _validateUser: validation  remoteName=me@u.client.minimaltd.ethos  localName=me,hostName=client.ethos  status = StatusOk
+1679630505.022694590 [kernel.C] _eventConnectionCreateAuthenticated: _validateUser me@u.client.ethos  StatusOk
+1679630505.022696626 [kernel.C] _eventConnectionCreateAuthenticated: next check /services/resh/resh
+1679630505.022697295 [kernel.C] _incomingConnection: at top
+1679630505.022699941 [kernel.C] _incomingConnection: status = StatusOk
+1679630505.022952896 [kernel.C] _eventConnectionCreateAuthenticated: rpcReply sent StatusOk
+1679630509.190252688 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630517.282970378 [kernel.C] rpcMinimaltIpcWrite:
+1679630519.173116668 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630519.248877981 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630519.304170801 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630519.377719524 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630519.438514495 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630529.560807747 [kernel.C] rpcMinimaltIpcWrite:
+1679630529.613523247 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630545.858318266 [kernel.C] rpcMinimaltConnectionCreateAuthenticated: enter  connectionId=8  path=/services/resh/resh
+1679630545.858326778 [kernel.C] _connectionCreate: advertiseFromPath succeeded
+1679630545.858328019 [kernel.C] _connectionCreate: connection created
+1679630545.858334529 [kernel.C] netFileReadPermission: servicePath=/services/resh
+1679630545.859044223 [kernel.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630545.859045413 [kernel.C] netFileReadPermission: label=openServer
+1679630545.860326062 [kernel.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630545.860328845 [kernel.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630545.860331303 [kernel.C] netFileReadPermission: permission-- incomingUser->group=allUsers
+1679630545.861055285 [kernel.C] netFileReadUserCertificateByGroup: group=allUsers  userName=pat@u.client.minimaltd.ethos  StatusNotAFile
+1679630546.084941782 [kernel.C] rpcDirectoryCacheGetUserReply: beginning  eventId=17930980963030575442  status=StatusOk
+1679630546.085941135 [kernel.C] netFileReadUserCertificateByGroup: group=allUsers  userName=pat@u.client.minimaltd.ethos  StatusOk
+1679630546.085944450 [kernel.C] directoryCacheUserLookup: returns pat@u.client.minimaltd.ethos value
+1679630546.086833845 [kernel.C] _validateUser: validation  remoteName=pat@u.client.minimaltd.ethos  localName=pat,hostName=client.ethos  status = StatusOk
+1679630546.086837663 [kernel.C] _eventConnectionCreateAuthenticated: _validateUser pat@u.client.ethos  StatusOk
+1679630546.086839780 [kernel.C] _eventConnectionCreateAuthenticated: next check /services/resh/resh
+1679630546.086840633 [kernel.C] _incomingConnection: at top
+1679630546.086844086 [kernel.C] _incomingConnection: status = StatusOk
+1679630546.087166573 [kernel.C] _eventConnectionCreateAuthenticated: rpcReply sent StatusOk
+1679630549.178581871 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630553.776813467 [kernel.C] rpcMinimaltIpcWrite:
+1679630555.601292478 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630555.677104439 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630555.741678071 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630555.809763854 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630555.876118520 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630589.204040745 [kernel.C] rpcMinimaltIpcWrite:
+1679630589.332283850 [kernel.C] rpcMinimaltIpcWriteReply:
+1679630484.054335171 [cryptoService.C] starts ...
+1679630484.200832663 [directoryCache.C] starts ...
+1679630484.304531769 [directoryCache.C] initialize: HostName 'client.ethos'    DirectoryServiceHostName 'client.ethos'   HostIpPort '169.254.2.2:11111'
+1679630484.378156408 [directoryCache.C] Ephemeral host certificate initialized ...
+1679630484.382391903 [directoryCache.C] EphemeralHostCertificate
+1679630484.407342593 [directoryCache.C]    Size: 394   Version: 0   ValidFrom: [1679630484.336214000]   ValidTo: [1711166484.336214000]
+1679630484.415936212 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630484.429147240 [directoryCache.C]    SignaturePublicKey:       2ce48332...7d0bcfd0
+1679630484.430148618 [directoryCache.C]    Signature:                5acd4f3b...b30ce742
+1679630484.448989559 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630484.458235704 [directoryCache.C]    LongTermEncryptingPublicKey:   e7926bf3...8c855201
+1679630484.461976959 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630530.737177000]  PublicKey=1a856769...bfdcf402
+1679630484.465946750 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630590.737177000]  PublicKey=39010e24...265bf46f
+1679630486.867209356 [directoryCache.C] Starting directoryService... path= /system/programs/directoryService
+1679630487.048073442 [directoryCache.C] asyncLoop: connected to kernel/directoryCache
+1679630487.096694549 [directoryCache.C] permissions for directoryService
+1679630487.112941650 [directoryCache.C]          [C]              ExecutableLabel: *    Group: *
+1679630487.132780051 [directoryCache.C]          [R]              ExecutableLabel: *    Group: *
+1679630487.157093992 [directoryCache.C]          [W]              ExecutableLabel: *    Group: *
+1679630487.159737121 [directoryCache.C]          [X]              ExecutableLabel: *    Group: *
+1679630487.161183319 [directoryCache.C]          [DC]             ExecutableLabel: *    Group: *
+1679630487.164249814 [directoryCache.C]          [DR]             ExecutableLabel: *    Group: *
+1679630487.176356135 [directoryCache.C]          [OutgoingHost]   ExecutableLabel: *    Group: allHosts
+1679630487.188179265 [directoryCache.C]          [OutgoingUser]   ExecutableLabel: *    Group: *
+1679630487.196593452 [directoryCache.C]          [IncomingUser]   ExecutableLabel: *    Group: universal
+1679630487.263704489 [directoryCache.C] asyncLoop: created directoryService group
+1679630487.270313554 [directoryCache.C] asyncLoop: DirectoryServiceHostName=client.ethos  directoryServiceFd=104
+1679630487.276743389 [directoryCache.C] asyncLoop: just before event loop
+1679630504.377181371 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630504.379848167 [directoryCache.C] DirectoryCacheInitializedInterlock:
+1679630504.395461242 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630504.398738206 [directoryCache.C] UserCertificate
+1679630504.413175715 [directoryCache.C]    Size: 362   Version: 0   ValidFrom: [1679630472.855572000]   ValidTo: [1711166472.855572000]
+1679630504.422017568 [directoryCache.C]    TypeHash:                 67c95180...271cc122
+1679630504.433598308 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630504.442588170 [directoryCache.C]    Signature:                00c98984...c134d129
+1679630504.453482209 [directoryCache.C]    Domain:                   client.minimaltd.ethos
+1679630504.463672540 [directoryCache.C]    Name:                     nobody
+1679630504.473633575 [directoryCache.C]    AliasName:                 nobody
+1679630504.484052365 [directoryCache.C]    SigningPublicKey:         cb4a1e37...820679fc
+1679630504.494501309 [directoryCache.C]    EncryptingPublicKey:      e2b4c188...02cdcc05
+1679630504.496116885 [directoryCache.C] DirectoryCacheGetUser: userName=nobody  groupName=universal
+1679630504.504480518 [directoryCache.C] group: groupName=universal  isHostGroup=false
+1679630504.558255590 [directoryCache.C] initGroup: Adding key for  client.ethos
+1679630504.559460043 [directoryCache.C] initGroup: Adding key for  client.minimaltd.ethos
+1679630504.568127075 [directoryCache.C] userGroupFetch: ugcName=universal@g.client.ethos
+1679630504.577272720 [directoryCache.C] userGroupCertificateProcess: ugcName=universal@g.client.ethos
+1679630504.580155562 [directoryCache.C] userGroupCertificateProcess: add wildcard member  *
+1679630504.589129432 [directoryCache.C] userGroupFetch of universal@g.client.ethos is done
+1679630504.597218435 [directoryCache.C] userCertificateProcess: nobody@u.client.minimaltd.ethos
+1679630504.606211880 [directoryCache.C] userCertificateProcess: done
+1679630504.608731685 [directoryCache.C] DirectoryCacheGetUser: userName=nobody@u.client.minimaltd.ethos  StatusOk
+1679630504.639772173 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630504.641991162 [directoryCache.C] UserCertificate
+1679630504.646084927 [directoryCache.C]    Size: 354   Version: 0   ValidFrom: [1679630472.768880000]   ValidTo: [1711166472.768880000]
+1679630504.647850118 [directoryCache.C]    TypeHash:                 67c95180...271cc122
+1679630504.649915183 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630504.651446501 [directoryCache.C]    Signature:                bd367a87...94450fae
+1679630504.656261310 [directoryCache.C]    Domain:                   client.minimaltd.ethos
+1679630504.658266729 [directoryCache.C]    Name:                     me
+1679630504.676426231 [directoryCache.C]    AliasName:                 me
+1679630504.678968106 [directoryCache.C]    SigningPublicKey:         80690d86...d3ac717b
+1679630504.681326003 [directoryCache.C]    EncryptingPublicKey:      683fca17...569fe933
+1679630504.690356811 [directoryCache.C] DirectoryCacheGetUser: userName=me  groupName=allUsers
+1679630504.692708882 [directoryCache.C] group: groupName=allUsers  isHostGroup=false
+1679630504.772755488 [directoryCache.C] initGroup: Adding key for  client.ethos
+1679630504.784753784 [directoryCache.C] initGroup: Adding key for  client.minimaltd.ethos
+1679630504.793637568 [directoryCache.C] userGroupFetch: ugcName=allUsers@g.client.ethos
+1679630504.807961429 [directoryCache.C] userGroupCertificateProcess: ugcName=allUsers@g.client.ethos
+1679630504.813891918 [directoryCache.C] userGroupCertificateProcess: processing member ahmed
+1679630504.825642043 [directoryCache.C] userGroupCertificateProcess: processing member bdrolet
+1679630504.835793628 [directoryCache.C] userGroupCertificateProcess: processing member bennett
+1679630504.847816600 [directoryCache.C] userGroupCertificateProcess: processing member gabriele
+1679630504.856216981 [directoryCache.C] userGroupCertificateProcess: processing member janosch
+1679630504.868285770 [directoryCache.C] userGroupCertificateProcess: processing member jlong
+1679630504.875585794 [directoryCache.C] userGroupCertificateProcess: processing member me
+1679630504.878212848 [directoryCache.C] userGroupCertificateProcess: processing member mike
+1679630504.889830462 [directoryCache.C] userGroupCertificateProcess: processing member nobody
+1679630504.896845854 [directoryCache.C] userGroupCertificateProcess: processing member pat
+1679630504.907927212 [directoryCache.C] userGroupCertificateProcess: processing member pollyPlaninsek
+1679630504.919058873 [directoryCache.C] userGroupCertificateProcess: processing member solworth
+1679630504.931267453 [directoryCache.C] userGroupCertificateProcess: processing member thanmayi
+1679630504.940817130 [directoryCache.C] userGroupCertificateProcess: processing member theodorePlaninsek
+1679630504.946482526 [directoryCache.C] userGroupCertificateProcess: processing member wfei
+1679630504.959668318 [directoryCache.C] userGroupCertificateProcess: processing member xuzhang
+1679630504.970261979 [directoryCache.C] userGroupCertificateProcess: processing member yl
+1679630504.981646029 [directoryCache.C] userGroupFetch of allUsers@g.client.ethos is done
+1679630504.982782629 [directoryCache.C] userCertificateProcess: me@u.client.minimaltd.ethos
+1679630504.996689526 [directoryCache.C] userCertificateProcess: done
+1679630505.016111976 [directoryCache.C] DirectoryCacheGetUser: userName=me@u.client.minimaltd.ethos  StatusOk
+1679630530.742236541 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630530.757906020 [directoryCache.C] Signing and writing my ephemeral host certificate client.ethos 169.254.2.2:11111
+1679630530.782642123 [directoryCache.C] EphemeralHostCertificate
+1679630530.783995680 [directoryCache.C]    Size: 394   Version: 0   ValidFrom: [1679630530.761649000]   ValidTo: [1711166530.761649000]
+1679630530.793596386 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630530.805699777 [directoryCache.C]    SignaturePublicKey:       2ce48332...7d0bcfd0
+1679630530.813219171 [directoryCache.C]    Signature:                7c0dc2d1...ff8de198
+1679630530.827084219 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630530.834672168 [directoryCache.C]    LongTermEncryptingPublicKey:   e7926bf3...8c855201
+1679630530.909905742 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630590.737177000]  PublicKey=39010e24...265bf46f
+1679630530.916866136 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630650.737177000]  PublicKey=5021a8c4...61a99a78
+1679630545.862127869 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630545.865666253 [directoryCache.C] UserCertificate
+1679630545.966391116 [directoryCache.C]    Size: 356   Version: 0   ValidFrom: [1679630472.884577000]   ValidTo: [1711166472.884577000]
+1679630545.969455162 [directoryCache.C]    TypeHash:                 67c95180...271cc122
+1679630545.971852040 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630545.981523103 [directoryCache.C]    Signature:                e1b9c903...217e7b10
+1679630545.983428838 [directoryCache.C]    Domain:                   client.minimaltd.ethos
+1679630545.992542805 [directoryCache.C]    Name:                     pat
+1679630545.994025171 [directoryCache.C]    AliasName:                 pat
+1679630546.004625520 [directoryCache.C]    SigningPublicKey:         3a62ce0d...8fbc7f84
+1679630546.014100686 [directoryCache.C]    EncryptingPublicKey:      0169f941...e5f42216
+1679630546.021138841 [directoryCache.C] DirectoryCacheGetUser: userName=pat  groupName=allUsers
+1679630546.036239466 [directoryCache.C] group: groupName=allUsers  isHostGroup=false
+1679630546.051819337 [directoryCache.C] userCertificateProcess: pat@u.client.minimaltd.ethos
+1679630546.066276747 [directoryCache.C] userCertificateProcess: done
+1679630546.075805687 [directoryCache.C] DirectoryCacheGetUser: userName=pat@u.client.minimaltd.ethos  StatusOk
+1679630590.741508777 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630590.755446812 [directoryCache.C] Signing and writing my ephemeral host certificate client.ethos 169.254.2.2:11111
+1679630590.776610413 [directoryCache.C] EphemeralHostCertificate
+1679630590.779448761 [directoryCache.C]    Size: 394   Version: 0   ValidFrom: [1679630590.756583000]   ValidTo: [1711166590.756583000]
+1679630590.781293515 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630590.791135742 [directoryCache.C]    SignaturePublicKey:       2ce48332...7d0bcfd0
+1679630590.803214203 [directoryCache.C]    Signature:                94eb70f3...7678f198
+1679630590.812022009 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630590.813819324 [directoryCache.C]    LongTermEncryptingPublicKey:   e7926bf3...8c855201
+1679630590.821035640 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630650.737177000]  PublicKey=5021a8c4...61a99a78
+1679630590.830495692 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630710.737177000]  PublicKey=2d9ebfd2...4cd77b0a
+1679630487.084154789 [directoryService.C] starts ...
+1679630487.144088845 [directoryService.C] Advertise succeeded
+1679630487.158277513 [directoryService.C] ImportAsync succeeded
+1679630487.273807252 [directoryService.C] woke up from block, len(completed)=1
+1679630504.642527724 [directoryService.C] woke up from block, len(completed)=1
+1679630504.657806897 [directoryService.C] woke up from block, len(completed)=1
+1679630504.698443649 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1679630504.718536670 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1679630504.742136482 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1679630529.563128661 [directoryService.C] woke up from block, len(completed)=1
+1679630529.566617411 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1679630529.585645165 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1679630529.605743076 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1679630589.206194719 [directoryService.C] woke up from block, len(completed)=1
+1679630589.224661708 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Updating ehc for host client.minimaltd.ethos
+1679630589.243351592 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/client.minimaltd.ethos: StatusOk
+1679630589.250887977 [directoryService.C] DirectoryServiceUploadEphemeralHostCertificate: Writing Certificate to /auth/sayi/e/10.0.2.15:11121: StatusOk
+1679630505.478468289 [el.C] elVersion:  2.0
+1679630519.405709850 [el.C] 10: startTime: 1679630518816056112 endTime: 1679630519395861932
+1679630519.415668960 [el.C] 10: Total Instructions executed: 2 and time: 579 ms
+1679630546.825857823 [el.C] elVersion:  2.0
+1679630555.848055964 [el.C] 14: startTime: 1679630555372458067 endTime: 1679630555838828522
+1679630555.858454241 [el.C] 14: Total Instructions executed: 2 and time: 466 ms
+1679630483.190824532 [init.C] Hello, world!
+1679630483.233681240 [init.C] Opening /etc/init/services/
+1679630483.367121839 [init.C] Reading /etc/init/services/cryptoService, pid = 2
+1679630483.387518953 [init.C] Reading /etc/init/services/directoryCache, pid = 4
+1679630483.435458666 [init.C] Reading /etc/init/services/pingService, pid = 5
+1679630483.468251891 [init.C] Running /system/programs/cryptoService
+1679630483.474631439 [init.C] Running /system/programs/directoryCache
+1679630483.512204082 [init.C] Reading /etc/init/services/reshService, pid = 6
+1679630483.541237294 [init.C] Reading /etc/init/services/syncService, pid = 7
+1679630483.543320644 [init.C] Running /system/programs/pingService
+1679630483.655747772 [init.C] Running /system/programs/reshService
+1679630483.767426857 [init.C] Running /programs/syncService
+1679630519.126816198 [init.C] Server : balance cash  : me
+1679630519.205130334 [init.C] Server : make deposit cash  : me, 200
+1679630519.268188622 [init.C] Server : withdraw cash  : me of 191
+1679630519.322144823 [init.C] Server : transfer money : me, to yl
+1679630555.566776818 [init.C] Server : balance cash  : pat
+1679630555.626138469 [init.C] Server : make deposit cash  : pat, 200
+1679630555.698749334 [init.C] Server : withdraw cash  : pat of 191
+1679630555.758587970 [init.C] Server : transfer money : pat, to yl
+1679630484.290794052 [reshService.C] before import
+1679630505.048743340 [reshService.C] import 22
+1679630505.122167153 [reshService.C] after fdSend
+1679630546.092808761 [reshService.C] import 22
+1679630546.103806010 [reshService.C] after fdSend
+1679630505.177185038 [reshVP.C] redirect to  9 
+1679630505.177185038 [reshVP.C] 
+1679630505.249776418 [reshVP.C] exec /programs/el
+1679630505.249776418 [reshVP.C] 
+1679630546.194620002 [reshVP.C] redirect to  9 
+1679630546.194620002 [reshVP.C] 
+1679630546.344852170 [reshVP.C] exec /programs/el
+1679630546.344852170 [reshVP.C] 
+1679630519.038740512 [syncClient.C] before call123
+1679630519.082926280 [syncClient.C] User calling is -> me
+1679630519.160901040 [syncClient.C] There was some problem getting Balance for me and the problem was me has balance 10000
+1679630519.179639795 [syncClient.C] Received balance Reply: amount = 10000 , error = me has balance 10000
+1679630519.250841527 [syncClient.C] Received make deposit Reply: ErrorNone
+1679630519.305936035 [syncClient.C] Received withdraw cash Reply: ErrorNone
+1679630519.379781796 [syncClient.C] Received transfer Reply: ErrorNone
+1679630519.387776301 [syncClient.C] Client Program Exited
+1679630555.500917848 [syncClient.C] before call123
+1679630555.546497065 [syncClient.C] User calling is -> pat
+1679630555.594334272 [syncClient.C] There was some problem getting Balance for pat and the problem was pat has balance 1000
+1679630555.607916260 [syncClient.C] Received balance Reply: amount = 1000 , error = pat has balance 1000
+1679630555.678918206 [syncClient.C] Received make deposit Reply: ErrorNone
+1679630555.743713055 [syncClient.C] Received withdraw cash Reply: ErrorNone
+1679630555.811322494 [syncClient.C] Received transfer Reply: ErrorNone
+1679630555.824865233 [syncClient.C] Client Program Exited
+1679630519.095190727 [syncService.C] new connection accepted123
+1679630519.130109741 [syncService.C] Server : balance cash : me
+1679630519.143441478 [syncService.C] Server : Balance for user : me is 10000 
+1679630519.191779046 [syncService.C] new connection accepted123
+1679630519.208002851 [syncService.C] Server : make deposit cash : me, 200
+1679630519.213716181 [syncService.C] Found Bank Balance for making a deposit me
+1679630519.224308740 [syncService.C] Server : Successfully made deposit cash : me, 200
+1679630519.239952665 [syncService.C] Server : New balance is -> 10200
+1679630519.255911291 [syncService.C] new connection accepted123
+1679630519.269413539 [syncService.C] Server : withdraw cash : me of 191
+1679630519.275026292 [syncService.C] Found Bank Balance for me with bank balance 10200 for withdrawl
+1679630519.285803560 [syncService.C] Server : Successfully withdraw cash : me of 191
+1679630519.319551101 [syncService.C] new connection accepted123
+1679630519.324956090 [syncService.C] Server : transfer money : me, to yl
+1679630519.341439014 [syncService.C] Amount inside me is 10009
+1679630519.343163760 [syncService.C] Amount transfered successful from  me to yl is 450
+1679630519.345354054 [syncService.C] New Balance of me is 9559
+1679630519.357596935 [syncService.C] New Balance of yl is 1450
+1679630555.553573715 [syncService.C] new connection accepted123
+1679630555.570995100 [syncService.C] Server : balance cash : pat
+1679630555.578361383 [syncService.C] Server : Balance for user : pat is 1000 
+1679630555.612592659 [syncService.C] new connection accepted123
+1679630555.628069025 [syncService.C] Server : make deposit cash : pat, 200
+1679630555.640914314 [syncService.C] Found Bank Balance for making a deposit pat
+1679630555.650965474 [syncService.C] Server : Successfully made deposit cash : pat, 200
+1679630555.660931094 [syncService.C] Server : New balance is -> 1200
+1679630555.696361578 [syncService.C] new connection accepted123
+1679630555.702560292 [syncService.C] Server : withdraw cash : pat of 191
+1679630555.711778005 [syncService.C] Found Bank Balance for pat with bank balance 1200 for withdrawl
+1679630555.722502266 [syncService.C] Server : Successfully withdraw cash : pat of 191
+1679630555.756109680 [syncService.C] new connection accepted123
+1679630555.759788903 [syncService.C] Server : transfer money : pat, to yl
+1679630555.763490324 [syncService.C] Amount inside pat is 1009
+1679630555.773414179 [syncService.C] Amount transfered successful from  pat to yl is 450
+1679630555.782557831 [syncService.C] New Balance of pat is 559
+1679630555.794648098 [syncService.C] New Balance of yl is 1900
+1679630504.606401000 [minimaltd.C] netFileInit ... mixinSubFiles: path=/types/all
+1679630504.621447000 [minimaltd.C] netFileInit done ... minimaltInit: _typeInit ... certificateInit ...ephemeralKeyPairRead ... advertiseInit
+1679630504.621633000 [minimaltd.C] ipcInit ...authUserInit ... mixinSubFiles: path=/auth/sayi/u
+1679630504.621815000 [minimaltd.C] _insert: authUser  localName=solworth   hostName=client.minimaltd.ethos   success
+1679630504.621908000 [minimaltd.C] _insert: authUser  localName=theodorePlaninsek   hostName=client.minimaltd.ethos   success
+1679630504.621987000 [minimaltd.C] _insert: authUser  localName=gabriele   hostName=client.minimaltd.ethos   success
+1679630504.622058000 [minimaltd.C] _insert: authUser  localName=root   hostName=client.minimaltd.ethos   success
+1679630504.622131000 [minimaltd.C] _insert: authUser  localName=pollyPlaninsek   hostName=client.minimaltd.ethos   success
+1679630504.622207000 [minimaltd.C] _insert: authUser  localName=yl   hostName=client.minimaltd.ethos   success
+1679630504.622309000 [minimaltd.C] _insert: authUser  localName=pat   hostName=client.minimaltd.ethos   success
+1679630504.622407000 [minimaltd.C] _insert: authUser  localName=bennett   hostName=client.minimaltd.ethos   success
+1679630504.622479000 [minimaltd.C] _insert: authUser  localName=thanmayi   hostName=client.minimaltd.ethos   success
+1679630504.622546000 [minimaltd.C] _insert: authUser  localName=jlong   hostName=client.minimaltd.ethos   success
+1679630504.622622000 [minimaltd.C] _insert: authUser  localName=nobody   hostName=client.minimaltd.ethos   success
+1679630504.622688000 [minimaltd.C] _insert: authUser  localName=xuzhang   hostName=client.minimaltd.ethos   success
+1679630504.622763000 [minimaltd.C] _insert: authUser  localName=me   hostName=client.minimaltd.ethos   success
+1679630504.622830000 [minimaltd.C] _insert: authUser  localName=bdrolet   hostName=client.minimaltd.ethos   success
+1679630504.622899000 [minimaltd.C] _insert: authUser  localName=ahmed   hostName=client.minimaltd.ethos   success
+1679630504.622973000 [minimaltd.C] _insert: authUser  localName=janosch   hostName=client.minimaltd.ethos   success
+1679630504.623051000 [minimaltd.C] _insert: authUser  localName=mike   hostName=client.minimaltd.ethos   success
+1679630504.623116000 [minimaltd.C] _insert: authUser  localName=wfei   hostName=client.minimaltd.ethos   success
+1679630504.623154000 [minimaltd.C] advertiseAdvertise: /services/kernel/directoryCache/directoryCache   0
+1679630504.623189000 [minimaltd.C] _insertPathToRdId: path=/services/kernel/directoryCache/directoryCache   RdId=1  done
+1679630504.623232000 [minimaltd.C] _getTypeHash: path=/services/kernel/directoryCache/directoryCache  StatusOk
+1679630504.623260000 [minimaltd.C] advertiseAdvertise: done  StatusOk
+1679630504.623299000 [minimaltd.C] directoryCacheInit: done StatusOk
+1679630504.623357000 [minimaltd.C] directoryCacheInit ... userCryptoInit ... done
+1679630504.623496000 [minimaltd.C] netInterfaceBind T1: local ip/port 10.0.2.15/11120
+1679630504.623599000 [minimaltd.C] netInterfaceBind T2: local ip/port 10.0.2.15/11121
+1679630504.623781000 [minimaltd.C] unixSocketAdd: Added   fd=9  type=FdInfoDirectoryCache  path=/services/kernel/directoryCache/directoryCache
+1679630504.623901000 [minimaltd.C] unixSocketAdd: Added   fd=10  type=FdInfoMinimaltdListen  path=/services/minimaltdService/minimaltdService
+1679630506.173997000 [minimaltd.C] unixSocketAdd: Added   fd=11  type=FdInfoMinimaltd   path=minimaltdService
+1679630506.174486000 [minimaltd.C] _getAuthUserByFd:  uid=1000
+1679630506.174530000 [minimaltd.C] establishIpc: /services/resh/resh
+1679630506.174578000 [minimaltd.C] _getTypeHash: path=/services/resh/resh  StatusOk
+1679630506.174623000 [minimaltd.C] remoteEventIpc:  /services/resh/resh   client.ethos   me,client.minimaltd.ethos
+1679630506.174655000 [minimaltd.C] netFileReadPermission: servicePath=/services/resh
+1679630506.174706000 [minimaltd.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630506.174739000 [minimaltd.C] netFileReadPermission: label=openServer
+1679630506.174782000 [minimaltd.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630506.174813000 [minimaltd.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630506.174846000 [minimaltd.C] netFileReadPermission: permission-- incomingUser->group=allUsers
+1679630506.174877000 [minimaltd.C] remoteEventIpc: pathName=/services/resh/resh  group=allHosts
+1679630506.174905000 [minimaltd.C] remoteEventIpc: before tunnelFindOrEstablish
+1679630506.174947000 [minimaltd.C] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusNotAFile
+1679630506.792032000 [minimaltd.C] unixSocketAdd: Added   fd=12  type=FdInfoIPCEndpoint  path=directoryCache
+1679630506.794856000 [minimaltd.C] unixSocketAdd: Added   fd=13  type=FdInfoMinimaltd   path=minimaltdService
+1679630506.794990000 [minimaltd.C] _getAuthUserByFd:  uid=65534
+1679630506.795034000 [minimaltd.C] establishIpc: /services/directoryService/directoryService
+1679630506.795075000 [minimaltd.C] _getTypeHash: path=/services/directoryService/directoryService  StatusOk
+1679630506.795118000 [minimaltd.C] remoteEventIpc:  /services/directoryService/directoryService   client.ethos   nobody,client.minimaltd.ethos
+1679630506.795156000 [minimaltd.C] netFileReadPermission: servicePath=/services/directoryService
+1679630506.795199000 [minimaltd.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630506.795227000 [minimaltd.C] netFileReadPermission: label=directoryService
+1679630506.795277000 [minimaltd.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630506.795307000 [minimaltd.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630506.795341000 [minimaltd.C] netFileReadPermission: permission-- incomingUser->group=universal
+1679630506.795371000 [minimaltd.C] remoteEventIpc: pathName=/services/directoryService/directoryService  group=allHosts
+1679630506.795399000 [minimaltd.C] remoteEventIpc: before directoryServiceTunnelFindOrEstablish
+1679630506.795443000 [minimaltd.C] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusNotAFile
+1679630506.795587000 [minimaltd.C] tunnelCreateOutgoing: successfully created tunnel
+1679630506.795627000 [minimaltd.C]    cryptoKeyType = CryptoKeyPermanent  tunnelId = 0x1e085b71203d8ff3
+1679630506.795660000 [minimaltd.C]    local    mac = 00:00:00:00:00:00    ip = 10.0.2.15    udp = 11120   isOdd = 0
+1679630506.795692000 [minimaltd.C]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 169.254.2.2    udp = 11110    nonce = 1
+1679630506.795722000 [minimaltd.C]    idPublicKey        = 0000000000000000000000000000000000000000000000000000000000000000
+1679630506.795751000 [minimaltd.C]    local.publicKey    = 264d55ce1878e4ccd16f7016d8eae732968919f233829b9f4cba5ec49edcb520
+1679630506.795782000 [minimaltd.C]    remote.publicKey   = e7926bf37b64b7ae2201c3a474c86d9058a637e742058bae79f0c4248c855201
+1679630506.795810000 [minimaltd.C]    symmetricKey       = 25aa2e48282e3b6f2c7e3704534633d48d9f9c03cf71b9e10f8a3b3c6952f519 
+1679630506.809384000 [minimaltd.C] rpcMinimaltDirectoryServiceLookupReply:
+1679630506.809536000 [minimaltd.C] netFileWritephemeralHostCertificate: host=client.ethos   StatusOk
+1679630506.809784000 [minimaltd.C] tunnelCreateOutgoing: inserted client.ethos   client.ethos
+1679630506.809838000 [minimaltd.C] tunnelCreateOutgoing: tunnel found
+1679630506.809892000 [minimaltd.C] tunnelCreateOutgoing: successfully created tunnel
+1679630506.809964000 [minimaltd.C]    cryptoKeyType = CryptoKeyEphemeral  tunnelId = 0x2ae9805cc66a48e5
+1679630506.810010000 [minimaltd.C]    local    mac = 00:00:00:00:00:00    ip = 10.0.2.15    udp = 11121   isOdd = 0
+1679630506.810047000 [minimaltd.C]    remote   mac = fe:ff:ff:ff:ff:ff    ip = 169.254.2.2    udp = 11111    nonce = 1
+1679630506.810111000 [minimaltd.C]    idPublicKey        = e7926bf37b64b7ae2201c3a474c86d9058a637e742058bae79f0c4248c855201
+1679630506.810171000 [minimaltd.C]    local.publicKey    = 1481f6826624ddced84f4c53f736562629569894ed70982beecef18f74582f74
+1679630506.810230000 [minimaltd.C]    remote.publicKey   = 1a856769f1dcd2698b269696a1dddd91f9798096bd616df146b38b69bfdcf402
+1679630506.810289000 [minimaltd.C]    symmetricKey       = 582034b80701ec36320e4ebe28d01e1d8d14c8f8dd676364c5037b2da2bbc24c 
+1679630506.810420000 [minimaltd.C] remoteEventIpc: before _createConnection StatusOk
+1679630506.810485000 [minimaltd.C] _createConnection: /services/directoryService/directoryService  nobody@u.client.minimaltd.ethos
+1679630506.810610000 [minimaltd.C] minimaltConnectionCreateAuthenticatedCall
+1679630506.810698000 [minimaltd.C] _generateAndSendUserAuthenticator! before block 14422155667471717691
+1679630507.048467000 [minimaltd.C] rpcMinimaltConnectionCreateReply! 14422155667471717691  StatusOk
+1679630507.048536000 [minimaltd.C] _generateAndSendUserAuthenticator! after block  StatusOk
+1679630507.048674000 [minimaltd.C] unixSocketAdd: Added   fd=14  type=FdInfoIPCEndpoint  path=/services/directoryService/directoryService
+1679630507.055698000 [minimaltd.C] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusOk
+1679630507.055754000 [minimaltd.C] remoteEventIpc: before _createConnection StatusOk
+1679630507.055796000 [minimaltd.C] _createConnection: /services/resh/resh  me@u.client.minimaltd.ethos
+1679630507.055871000 [minimaltd.C] minimaltConnectionCreateAuthenticatedCall
+1679630507.055932000 [minimaltd.C] _generateAndSendUserAuthenticator! before block 3073996596619479186
+1679630507.058597000 [minimaltd.C] rpcMinimaltIpcWriteReply:
+1679630507.170093000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630507.450437000 [minimaltd.C] rpcMinimaltConnectionCreateReply! 3073996596619479186  StatusOk
+1679630507.450517000 [minimaltd.C] _generateAndSendUserAuthenticator! after block  StatusOk
+1679630507.450649000 [minimaltd.C] unixSocketAdd: Added   fd=16  type=FdInfoIPCEndpoint  path=/services/resh/resh
+1679630511.642417000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630519.792454000 [minimaltd.C] rpcMinimaltIpcWriteReply:
+1679630521.692013000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630521.768941000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630521.823354000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630521.898937000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630521.959748000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630532.151942000 [minimaltd.C] rpcMinimaltIpcWriteReply:
+1679630532.203534000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630548.554089000 [minimaltd.C] unixSocketAdd: Added   fd=18  type=FdInfoMinimaltd   path=minimaltdService
+1679630548.554587000 [minimaltd.C] _getAuthUserByFd:  uid=1005
+1679630548.554676000 [minimaltd.C] establishIpc: /services/resh/resh
+1679630548.554772000 [minimaltd.C] _getTypeHash: path=/services/resh/resh  StatusOk
+1679630548.554851000 [minimaltd.C] remoteEventIpc:  /services/resh/resh   client.ethos   pat,client.minimaltd.ethos
+1679630548.554921000 [minimaltd.C] netFileReadPermission: servicePath=/services/resh
+1679630548.555010000 [minimaltd.C] netFileReadPermission: mixinGetFileInformation  status=StatusOk
+1679630548.555061000 [minimaltd.C] netFileReadPermission: label=openServer
+1679630548.555154000 [minimaltd.C] netFileReadPermission: mixinReadTyped  status=StatusOk
+1679630548.555217000 [minimaltd.C] netFileReadPermission: permission-- outgoingUser->group=*
+1679630548.555283000 [minimaltd.C] netFileReadPermission: permission-- incomingUser->group=allUsers
+1679630548.555351000 [minimaltd.C] remoteEventIpc: pathName=/services/resh/resh  group=allHosts
+1679630548.555416000 [minimaltd.C] remoteEventIpc: before tunnelFindOrEstablish
+1679630548.555518000 [minimaltd.C] netFileReadEphemeralHostCertificateByGroup: group=allHosts   host=client.ethos   StatusOk
+1679630548.555587000 [minimaltd.C] remoteEventIpc: before _createConnection StatusOk
+1679630548.555644000 [minimaltd.C] _createConnection: /services/resh/resh  pat@u.client.minimaltd.ethos
+1679630548.555780000 [minimaltd.C] minimaltConnectionCreateAuthenticatedCall
+1679630548.555919000 [minimaltd.C] _generateAndSendUserAuthenticator! before block 13148259427557494966
+1679630548.788057000 [minimaltd.C] rpcMinimaltConnectionCreateReply! 13148259427557494966  StatusOk
+1679630548.788141000 [minimaltd.C] _generateAndSendUserAuthenticator! after block  StatusOk
+1679630548.788286000 [minimaltd.C] unixSocketAdd: Added   fd=19  type=FdInfoIPCEndpoint  path=/services/resh/resh
+1679630549.350816000 [minimaltd.C] netFileInit ... mixinSubFiles: path=/types/all
+1679630549.368835000 [minimaltd.C] netFileInit done ... minimaltInit: _typeInit ... certificateInit ...ephemeralKeyPairRead ... advertiseInit
+1679630549.368986000 [minimaltd.C] ipcInit ...authUserInit ... mixinSubFiles: path=/auth/sayi/u
+1679630549.369109000 [minimaltd.C] _insert: authUser  localName=solworth   hostName=client.minimaltd.ethos   success
+1679630549.369174000 [minimaltd.C] _insert: authUser  localName=theodorePlaninsek   hostName=client.minimaltd.ethos   success
+1679630549.369231000 [minimaltd.C] _insert: authUser  localName=gabriele   hostName=client.minimaltd.ethos   success
+1679630549.369306000 [minimaltd.C] _insert: authUser  localName=root   hostName=client.minimaltd.ethos   success
+1679630549.371413000 [minimaltd.C] _insert: authUser  localName=pollyPlaninsek   hostName=client.minimaltd.ethos   success
+1679630549.371510000 [minimaltd.C] _insert: authUser  localName=yl   hostName=client.minimaltd.ethos   success
+1679630549.371599000 [minimaltd.C] _insert: authUser  localName=pat   hostName=client.minimaltd.ethos   success
+1679630549.371694000 [minimaltd.C] _insert: authUser  localName=bennett   hostName=client.minimaltd.ethos   success
+1679630549.371784000 [minimaltd.C] _insert: authUser  localName=thanmayi   hostName=client.minimaltd.ethos   success
+1679630549.371870000 [minimaltd.C] _insert: authUser  localName=jlong   hostName=client.minimaltd.ethos   success
+1679630549.371955000 [minimaltd.C] _insert: authUser  localName=nobody   hostName=client.minimaltd.ethos   success
+1679630549.372039000 [minimaltd.C] _insert: authUser  localName=xuzhang   hostName=client.minimaltd.ethos   success
+1679630549.372126000 [minimaltd.C] _insert: authUser  localName=me   hostName=client.minimaltd.ethos   success
+1679630549.372223000 [minimaltd.C] _insert: authUser  localName=bdrolet   hostName=client.minimaltd.ethos   success
+1679630549.372309000 [minimaltd.C] _insert: authUser  localName=ahmed   hostName=client.minimaltd.ethos   success
+1679630549.372451000 [minimaltd.C] _insert: authUser  localName=janosch   hostName=client.minimaltd.ethos   success
+1679630549.372540000 [minimaltd.C] _insert: authUser  localName=mike   hostName=client.minimaltd.ethos   success
+1679630549.372616000 [minimaltd.C] _insert: authUser  localName=wfei   hostName=client.minimaltd.ethos   success
+1679630549.372665000 [minimaltd.C] advertiseAdvertise: /services/kernel/directoryCache/directoryCache   0
+1679630549.372718000 [minimaltd.C] _insertPathToRdId: path=/services/kernel/directoryCache/directoryCache   RdId=1  done
+1679630549.372778000 [minimaltd.C] _getTypeHash: path=/services/kernel/directoryCache/directoryCache  StatusOk
+1679630549.372822000 [minimaltd.C] advertiseAdvertise: done  StatusOk
+1679630549.372876000 [minimaltd.C] directoryCacheInit: done StatusOk
+1679630549.372954000 [minimaltd.C] directoryCacheInit ... userCryptoInit ... done
+1679630549.373132000 [minimaltd.C] netInterfaceBind T1: local ip/port 10.0.2.15/11120
+1679630549.373266000 [minimaltd.C] netInterfaceBind T2: local ip/port 10.0.2.15/11121
+1679630549.373469000 [minimaltd.C] unixSocketAdd: Added   fd=9  type=FdInfoDirectoryCache  path=/services/kernel/directoryCache/directoryCache
+1679630549.373600000 [minimaltd.C] unixSocketAdd: Added   fd=10  type=FdInfoMinimaltdListen  path=/services/minimaltdService/minimaltdService
+1679630551.835105000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630556.531146000 [minimaltd.C] rpcMinimaltIpcWriteReply:
+1679630558.363420000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630558.440278000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630558.503578000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630558.573663000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630558.640506000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630592.191967000 [minimaltd.C] rpcMinimaltIpcWriteReply:
+1679630592.319686000 [minimaltd.C] rpcMinimaltIpcWrite:
+1679630506.665868000 [directoryCache.C] starts ...
+1679630506.666437000 [directoryCache.C] initialize: HostName 'client.minimaltd.ethos'    DirectoryServiceHostName 'client.ethos'   HostIpPort '10.0.2.15:11121'
+1679630506.667113000 [directoryCache.C] DirectoryCertificate
+1679630506.667333000 [directoryCache.C]    Size: 355   Version: 0   ValidFrom: [1679630472.971483000]   ValidTo: [1711166472.971483000]
+1679630506.667439000 [directoryCache.C]    TypeHash:                 ca47cabb...c8a40a4b
+1679630506.667518000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630506.667926000 [directoryCache.C]    Signature:                787c3285...8c8d24b8
+1679630506.668143000 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630506.668224000 [directoryCache.C]    DomainServed:             ethos
+1679630506.668306000 [directoryCache.C]    SigningPublicKey:         2ce48332...7d0bcfd0
+1679630506.668500000 [directoryCache.C]    EncryptingPublicKey:      e7926bf3...8c855201
+1679630506.670297000 [directoryCache.C] Ephemeral host certificate initialized ...
+1679630506.670526000 [directoryCache.C] EphemeralHostCertificate
+1679630506.671029000 [directoryCache.C]    Size: 404   Version: 0   ValidFrom: [1679630506.668866000]   ValidTo: [1711166506.668866000]
+1679630506.671106000 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630506.671232000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630506.671295000 [directoryCache.C]    Signature:                15701b81...677ccd4b
+1679630506.671649000 [directoryCache.C]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1679630506.671704000 [directoryCache.C]    LongTermEncryptingPublicKey:   0edcefc0...67c64840
+1679630506.671760000 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630532.114017000]  PublicKey=b6c72ce3...88407453
+1679630506.671813000 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630592.114017000]  PublicKey=8b41c60a...2de8d908
+1679630506.792137000 [directoryCache.C] asyncLoop: connected to kernel/directoryCache
+1679630506.792275000 [directoryCache.C] permissions for directoryService
+1679630506.792539000 [directoryCache.C]          [C]              ExecutableLabel: *    Group: *
+1679630506.792582000 [directoryCache.C]          [R]              ExecutableLabel: *    Group: *
+1679630506.792622000 [directoryCache.C]          [W]              ExecutableLabel: *    Group: *
+1679630506.792698000 [directoryCache.C]          [X]              ExecutableLabel: *    Group: *
+1679630506.792758000 [directoryCache.C]          [DC]             ExecutableLabel: *    Group: *
+1679630506.793028000 [directoryCache.C]          [DR]             ExecutableLabel: *    Group: *
+1679630506.793068000 [directoryCache.C]          [OutgoingHost]   ExecutableLabel: *    Group: allHosts
+1679630506.793108000 [directoryCache.C]          [OutgoingUser]   ExecutableLabel: *    Group: *
+1679630506.793175000 [directoryCache.C]          [IncomingUser]   ExecutableLabel: *    Group: universal
+1679630506.794245000 [directoryCache.C] asyncLoop: created directoryService group
+1679630507.048809000 [directoryCache.C] asyncLoop: DirectoryServiceHostName=client.ethos  directoryServiceFd=4
+1679630507.049196000 [directoryCache.C] asyncLoop: just before event loop
+1679630507.049720000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630507.049795000 [directoryCache.C] DirectoryCacheGetHost: hostName=client.ethos  groupName=allHosts
+1679630507.049847000 [directoryCache.C] group: groupName=allHosts  isHostGroup=true
+1679630507.049908000 [directoryCache.C] initGroup: Adding key for  client.minimaltd.ethos
+1679630507.049968000 [directoryCache.C] initGroup: Adding key for  client.ethos
+1679630507.050555000 [directoryCache.C] initGroup: Adding key for  ethos
+1679630507.050618000 [directoryCache.C] g.hostGroupFetch:  allHosts@j.client.minimaltd.ethos
+1679630507.050677000 [directoryCache.C] g.hostGroupFetch: hostGroupCertificateFind  StatusOk
+1679630507.050744000 [directoryCache.C] hostGroupCertificateProcess: allHosts@j.client.minimaltd.ethos
+1679630507.051132000 [directoryCache.C] hostGroupCertificateProcess: done
+1679630507.051387000 [directoryCache.C] hostGroupFetch allHosts@j.client.minimaltd.ethos done with status StatusOk
+1679630507.051518000 [directoryCache.C] EphemeralHostCertificate
+1679630507.051559000 [directoryCache.C]    Size: 394   Version: 0   ValidFrom: [1679630484.336214000]   ValidTo: [1711166484.336214000]
+1679630507.051601000 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630507.051638000 [directoryCache.C]    SignaturePublicKey:       2ce48332...7d0bcfd0
+1679630507.051676000 [directoryCache.C]    Signature:                5acd4f3b...b30ce742
+1679630507.052090000 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630507.052132000 [directoryCache.C]    LongTermEncryptingPublicKey:   e7926bf3...8c855201
+1679630507.052196000 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630530.737177000]  PublicKey=1a856769...bfdcf402
+1679630507.052236000 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630590.737177000]  PublicKey=39010e24...265bf46f
+1679630507.054903000 [directoryCache.C] EphemeralHostCertificateWrite: status = StatusOk client.ethos
+1679630507.054949000 [directoryCache.C] DirectoryCacheGetHost:  client.ethos StatusOk
+1679630507.170266000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630507.170343000 [directoryCache.C] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1679630532.144076000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630532.145512000 [directoryCache.C] Signing and writing my ephemeral host certificate client.minimaltd.ethos 10.0.2.15:11121
+1679630532.147529000 [directoryCache.C] EphemeralHostCertificate
+1679630532.147585000 [directoryCache.C]    Size: 404   Version: 0   ValidFrom: [1679630532.145579000]   ValidTo: [1711166532.145579000]
+1679630532.147663000 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630532.147711000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630532.147756000 [directoryCache.C]    Signature:                6e266335...9c39b0ad
+1679630532.148092000 [directoryCache.C]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1679630532.148160000 [directoryCache.C]    LongTermEncryptingPublicKey:   0edcefc0...67c64840
+1679630532.148202000 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630592.114017000]  PublicKey=8b41c60a...2de8d908
+1679630532.148242000 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630652.114017000]  PublicKey=dc7fbfcf...09257057
+1679630532.203722000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630532.203819000 [directoryCache.C] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1679630551.376012000 [directoryCache.C] starts ...
+1679630551.379689000 [directoryCache.C] initialize: HostName 'client.minimaltd.ethos'    DirectoryServiceHostName 'client.ethos'   HostIpPort '10.0.2.15:11121'
+1679630551.379833000 [directoryCache.C] DirectoryCertificate
+1679630551.379940000 [directoryCache.C]    Size: 355   Version: 0   ValidFrom: [1679630472.971483000]   ValidTo: [1711166472.971483000]
+1679630551.380050000 [directoryCache.C]    TypeHash:                 ca47cabb...c8a40a4b
+1679630551.382263000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630551.382526000 [directoryCache.C]    Signature:                787c3285...8c8d24b8
+1679630551.382906000 [directoryCache.C]    HostRecord:               hostname: client.ethos   ip: 169.254.2.2   port: 11111    padding: 0    protocol: 1
+1679630551.383048000 [directoryCache.C]    DomainServed:             ethos
+1679630551.383350000 [directoryCache.C]    SigningPublicKey:         2ce48332...7d0bcfd0
+1679630551.383395000 [directoryCache.C]    EncryptingPublicKey:      e7926bf3...8c855201
+1679630551.385167000 [directoryCache.C] Ephemeral host certificate initialized ...
+1679630551.385244000 [directoryCache.C] EphemeralHostCertificate
+1679630551.385291000 [directoryCache.C]    Size: 404   Version: 0   ValidFrom: [1679630551.383730000]   ValidTo: [1711166551.383730000]
+1679630551.385340000 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630551.385722000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630551.385773000 [directoryCache.C]    Signature:                75fddc24...07d122e2
+1679630551.385863000 [directoryCache.C]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1679630551.385952000 [directoryCache.C]    LongTermEncryptingPublicKey:   0edcefc0...67c64840
+1679630551.386096000 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630592.114017000]  PublicKey=8b41c60a...2de8d908
+1679630551.386366000 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630652.114017000]  PublicKey=dc7fbfcf...09257057
+1679630551.390441000 [directoryCache.C] certificateName wrong form:  ahmed
+1679630551.393583000 [directoryCache.C] userCertificateCache: can't write /auth/sayi/cache/4f04e26b62394f000aac0bc9f5ec124af54ce253a99ef3e91c88e330b1c467e5/u/, status=StatusFail
+1679630592.184083000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630592.185104000 [directoryCache.C] Signing and writing my ephemeral host certificate client.minimaltd.ethos 10.0.2.15:11121
+1679630592.186017000 [directoryCache.C] EphemeralHostCertificate
+1679630592.186076000 [directoryCache.C]    Size: 404   Version: 0   ValidFrom: [1679630592.185158000]   ValidTo: [1711166592.185158000]
+1679630592.186339000 [directoryCache.C]    TypeHash:                 9d7d7872...0277dd07
+1679630592.186380000 [directoryCache.C]    SignaturePublicKey:       4f04e26b...b1c467e5
+1679630592.186424000 [directoryCache.C]    Signature:                9eff1b5d...e827e9da
+1679630592.186540000 [directoryCache.C]    HostRecord:               hostname: client.minimaltd.ethos   ip: 10.0.2.15   port: 11121    padding: 0    protocol: 1
+1679630592.186591000 [directoryCache.C]    LongTermEncryptingPublicKey:   0edcefc0...67c64840
+1679630592.186834000 [directoryCache.C]    EphemeralKeyAndExpiration[0]:  Expiration=[1679630652.114017000]  PublicKey=dc7fbfcf...09257057
+1679630592.186877000 [directoryCache.C]    EphemeralKeyAndExpiration[1]:  Expiration=[1679630712.114017000]  PublicKey=6f80a058...f828bd20
+1679630592.319888000 [directoryCache.C] asyncLoop: completed: 1 pending: 2
+1679630592.319970000 [directoryCache.C] DirectoryServiceUploadEphemeralHostCertificateReply: status=StatusOk
+1679630506.173747000 [et.C] Attempting to connect to  client.ethos
+1679630507.450816000 [et.C] before event loop
+1679630511.642697000 [et.C] event completed
+1679630519.789491000 [et.C] event completed
+1679630521.692201000 [et.C] event completed
+1679630521.769108000 [et.C] event completed
+1679630521.823551000 [et.C] event completed
+1679630521.899135000 [et.C] event completed
+1679630521.959946000 [et.C] event completed
+1679630548.544463000 [et.C] Attempting to connect to  client.ethos
+1679630548.788809000 [et.C] before event loop
+1679630551.836596000 [et.C] event completed
+1679630556.525495000 [et.C] event completed
+1679630558.363658000 [et.C] event completed
+1679630558.440451000 [et.C] event completed
+1679630558.503802000 [et.C] event completed
+1679630558.573851000 [et.C] event completed
+1679630558.640675000 [et.C] event completed
+
